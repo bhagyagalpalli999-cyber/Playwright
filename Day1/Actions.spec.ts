@@ -166,33 +166,33 @@
 // })
 
 
-//added comment
-//multiselect Dropdown
-// import{test, expect,Locator} from "@playwright/test";
+// added comment
+// multiselect Dropdown
+import{test, expect,Locator} from "@playwright/test";
 
-// test('Multi sleect dropdown',async({page})=>{
-//     await page.goto('https://testautomationpractice.blogspot.com/');
+test('Multi sleect dropdown',async({page})=>{
+    await page.goto('https://testautomationpractice.blogspot.com/');
 
-//     // const v:Locator=page.locator("//select[@id='colors']/option");
-//     // expect(v).toHaveCount(7);
+    // const v:Locator=page.locator("//select[@id='colors']/option");
+    // expect(v).toHaveCount(7);
 
-//     // const optionText:string[]=await v.allTextContents();
-//     // const finalText:string[]=optionText.map(t=>t.trim());
-//     // expect(finalText).toContain("Red");
+    // const optionText:string[]=await v.allTextContents();
+    // const finalText:string[]=optionText.map(t=>t.trim());
+    // expect(finalText).toContain("Red");
 
-//     const v:Locator=page.locator("//select[@id='colors']/option");
+    const v:Locator=page.locator("//select[@id='colors']/option");
 
    
-//     const optionText:string[]=(await v.allTextContents()).map(t=>t.trim());
+    const optionText:string[]=(await v.allTextContents()).map(t=>t.trim());
 
     
 
-//    const orignalText:string[]=[...optionText];
-//    const sortedText:string[]=[...optionText].sort();
-//    console.log(orignalText);
-//    console.log(sortedText);
+   const orignalText:string[]=[...optionText];
+   const sortedText:string[]=[...optionText].sort();
+   console.log(orignalText);
+   console.log(sortedText);
 
-//    expect(orignalText).toEqual(sortedText);
+   expect(orignalText).toEqual(sortedText);
 
 
     
@@ -200,10 +200,10 @@
 
 
 
-//     await page.waitForTimeout(2000);
+    await page.waitForTimeout(2000);
 
 
-// })
+})
 
 
 //hidden dropdowns
